@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suzana</title>
+    <title>  Ashuu </title>
     <!-- Stylesheet -->
     <!-- <link rel="stylesheet" href="style.css">  -->
     <script>document.addEventListener('mousemove', function(e){
@@ -84,14 +84,65 @@
             flex-direction: column;
             color: yellow;
         }
+
+
+          h2 {
+  position: relative;
+  margin: 0;
+  font-size: 4em;
+  font-weight: 900;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+}
+h2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 120%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+  animation: animate 6s linear forwards;
+  animation-delay: 2s;
+}
+@keyframes animate {
+  0% {
+    left: 120%;
+  }
+  100% {
+    left: -20%;
+  }
+}
+h2 span {
+  color: #ff022c;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
         
         
         </style>
 </head>
 <body>
     <div class="container" id="container">
-        <h1 class="sizuka">HI Suzana </h1>
-        <h1 class="sizuka">I am Pushpesh</h1>
+        <h1 class="sizuka">HI Ashuu </h1>
+      
+<br>
+
+     <video src="particles.mp4" muted="" autoplay=""></video>
+    <h2>
+      <span>Ashuu</span> I am pushpesh<span> Happy </span> Birthday my
+      <span> Sweetheart </span>
+    </h2>
     </div>
     <!-- Script -->
         
